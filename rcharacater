@@ -1,0 +1,17 @@
+local rand = Random.new()
+local function randColor()
+   return Color3.new(rand:NextNumber(), rand:NextNumber(),rand:NextNumber())
+end
+
+while wait(.1) do
+local args = {
+   [1] = "Color",
+   [2] = randColor(),
+   [3] = "SkinColor"
+}
+
+game:GetService("ReplicatedStorage")["_CS.Events"].EquipAvatarItem:FireServer(unpack(args))
+args[2] = randColor()
+args[3] = "HairColor"
+game:GetService("ReplicatedStorage")["_CS.Events"].EquipAvatarItem:FireServer(unpack(args))
+end
