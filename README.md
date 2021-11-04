@@ -1,2 +1,1 @@
-- My discord: rod#1337
-- Node.JS & Lua Programmer
+- My discord: rod#8585 (UPDATED)
